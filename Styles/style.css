@@ -101,7 +101,29 @@
 
 /*  =================================================================  */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1025px) {
+    .nav_element {
+        font-size:20px;
+    }
+    #header_content h1 {
+        font-size:28px;
+    }
+    #unisvers_presentation {
+        grid-column:2/12 !important;
+        font-size:20px !important;
+        text-align:center;
+    }
+    #diaporama {
+        grid-column:2/12 !important;
+    }
+    .content {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
     #logo_top {
         width:auto;
         height:auto;
@@ -129,7 +151,7 @@
     justify-items: center;
 }
 
-#header_content h1 {
+#title_header {
     width: 277px;
     font-family: Lato;
     font-weight: 800;
@@ -153,7 +175,7 @@
 }
 
 
-#unisvers_association_presentation {
+#unisvers_presentation {
     grid-column:3/6;
     color: white;
     font-family: Lato;
