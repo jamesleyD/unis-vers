@@ -31,8 +31,6 @@
 
 #logo_top {
     grid-column: 3/6;
-    width: 100%;
-    height: 100%;
 }
 
 #nav_bar_ul {
@@ -110,7 +108,6 @@
     }
     #unisvers_presentation {
         grid-column:2/12 !important;
-        font-size:20px !important;
         text-align:center;
     }
     #diaporama {
@@ -120,10 +117,30 @@
         align-items: center;
         justify-content: center;
     }
+    #second_container {
+        bottom: 380px !important;
+    }
+    .title_b {
+        font-size: 30px !important;
+    }
+    .activité_titre_y .activité_titre_g {
+        font-size: 25px;
+    }
+    .activité_cont {
+        flex-direction: column !important;
+    }
+    .activité_p {
+        margin-bottom: 20px;
+    }
+    .activité_presentation {
+        flex: auto !important;
+    }
 }
 
-
 @media screen and (max-width: 800px) {
+    #header_container {
+        height: auto !important;
+    }
     #logo_top {
         width:auto;
         height:auto;
@@ -139,6 +156,30 @@
         display:none;
         flex-direction: column;
     }
+    #second_container {
+        bottom: 0px !important;
+    }
+    #activities_container {
+        grid-column: 2/12 !important;
+        border-radius: 0%;
+    }
+    .below_title {
+        width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    #unisvers_presentation,.activité_p {
+        font-size: 20px !important;
+    }
+    .activité_titre_y,.activité_titre_g {
+        font-size: 25px !important;
+        height: 53px !important;
+
+    }
+    
+
 }
 
 /*  =================================================================  */
@@ -170,7 +211,7 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap:30px;
-    margin-top:50px;   
+    margin-top:3%;   
 }
 
 
@@ -185,6 +226,11 @@
 
 #diaporama {
     grid-column:6/11;
+    max-width: 100%;
+    max-height: 100%;
+    padding: auto;
+    margin: auto;
+    display: block;
 }
 
 
@@ -305,7 +351,8 @@
     flex: 1 1 500px;
 }
 
-.activité_titre_y {
+
+.activité_titre_g,.activité_titre_y {
     font-family: "Lato";
     font-style: normal;
     font-size: 30px;
@@ -317,7 +364,13 @@
     height: 66px;
     left: 261px;
     top: 878px;
+}
+.activité_titre_y {
     background: #FFB800;
+}
+
+.activité_titre_g {
+    background: #00A863;
 }
 
 .activité_p {
@@ -335,13 +388,17 @@
     display: flex;
 }
 .img_activité {
-    margin-right: 15px;
     border-radius: 20px;
     max-width: 100%;
     max-height: 100%;
     padding: auto;
     margin: auto;
     display: block;
+
+}
+
+.reverse {
+    flex-direction: row-reverse;
 }
 /*  =================================================================  */
 
