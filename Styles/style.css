@@ -16,7 +16,7 @@
 #header_container {
     display: flex;
     flex-direction: column;
-    height:1012px;
+    height:1300px;
     background-color: #5271FF;
 }
 
@@ -101,7 +101,7 @@
 
 /*  =================================================================  */
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1250px) {
     .nav_element {
         font-size:20px;
     }
@@ -170,8 +170,7 @@
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-gap:30px;
-    margin-top:50px;
-    
+    margin-top:50px;   
 }
 
 
@@ -244,5 +243,109 @@
     from {opacity: .4} 
     to {opacity: 1}
   }
+
+/*  =================================================================  */
+
+#second_container{
+    bottom:50px;
+    width:100%;
+    bottom: 470px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap:30px;
+    margin-top:50px;
+    justify-items: center;
+}
+
+#activities_container {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    grid-column: 3/11;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+.title_cont {
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.title_b {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    color: #5474FA;
+}
+
+.below_title{
+    margin-top:10px;
+    width: 466px;
+    height: 8px;
+    background: #5474FA;
+}
+
+.activité_cont{
+    margin-top:40px;
+    width: 100%;
+    max-height: 700px;
+    display: flex;
+}
+
+.activité_presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 500px;
+}
+
+.activité_titre_y {
+    font-family: "Lato";
+    font-style: normal;
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-top: 10px;
+
+    text-align: center;
+    width: 95%;
+    height: 66px;
+    left: 261px;
+    top: 878px;
+    background: #FFB800;
+}
+
+.activité_p {
+    margin-top:15px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    max-width: 95%;
+
+    color: #000000;
+}
+.img_activité_div{
+    display: flex;
+}
+.img_activité {
+    margin-right: 15px;
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: auto;
+    margin: auto;
+    display: block;
+}
+/*  =================================================================  */
+
+
+
 
 /*  =================================================================  */
