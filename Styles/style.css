@@ -9,6 +9,7 @@
 #main_container{
     display: flex;
     flex-direction: column;
+
 }
 
 /*  =================================================================  */
@@ -159,7 +160,7 @@
     #second_container {
         bottom: 0px !important;
     }
-    #activities_container {
+    #activities_container,#contact_container {
         grid-column: 2/12 !important;
         border-radius: 0%;
     }
@@ -304,7 +305,7 @@
     justify-items: center;
 }
 
-#activities_container {
+#activities_container,#contact_container {
     display: flex;
     flex-direction: column;
     width:100%;
@@ -402,6 +403,108 @@
 }
 /*  =================================================================  */
 
+input {
+    color: white;
+}
+
+#contact_container {
+}
+
+#contact_form {
+    display: grid !important;
+    grid-template-columns: repeat(8,1fr);
+    grid-gap:30px;
+    align-items:center;
+    justify-content: space-between ;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top:3%;
+    background: #5271FF;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#contact_form label,input,textarea {
+
+    grid-column: 2/8;
+}
+
+#contact_form input,textarea {
+    width: 100%;
+}
+
+#contact_form input,textarea {
+    font-family: Lato;
+    font-size: 24px;
+    color: #000000;
+    width: 100%;
+}
+.input_email,.input_nom,.input_subject{
+    height: 55px;
+}
+
+.form_text {
+    margin-bottom:15px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+
+    color: #75FFC6;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn_submit{
+    grid-column: 2/4;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 31px;
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 78px;
+    background: #FFB800;
+    
+}
+
+h2 {
+    margin-top:3%;
+    grid-column: 3/11;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #000000;
+
+}
+
+
+
+/*  =================================================================  */
+
+#maps {
+    grid-column: 2/12 !important;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
+}
+
+#iframe_small,#iframe_medium {
+    display: none;
+}
+
+/*  =================================================================  */
 
 
 
