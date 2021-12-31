@@ -6,6 +6,10 @@
     margin: 0;
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 #main_container{
     display: flex;
     flex-direction: column;
@@ -49,6 +53,25 @@
 .nav_element a {
     color: white;
 }
+.nav_element a:hover{
+    color: #75FFC6;
+}
+
+.nav_element a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #75FFC6;
+    transition: width .3s;
+}
+
+.nav_element a:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
 /*  =================================================================  */
 
 .menu-btn {
@@ -57,6 +80,10 @@
   cursor: pointer;
   transition: all .2s ease-in-out;
   display:none;
+  z-index: 100;
+  position:relative;
+  right: 8%;
+
 }
 .menu-btn__burger {
   width: 50px;
@@ -89,11 +116,11 @@
   box-shadow: none;
 }
 .menu-btn.open .menu-btn__burger::before {
-    background: #75FFC6;
+    background: #00A863;
     transform: rotate(45deg) ;
 }
 .menu-btn.open .menu-btn__burger::after {
-    background: #75FFC6;
+    background: #00A863;
     transform: rotate(-45deg);
 }
 
@@ -582,6 +609,8 @@ h2 {
     #header_container {
         height: auto ;
     }
+
+
     #logo_top {
         width:auto;
         height:auto;
@@ -594,9 +623,45 @@ h2 {
         grid-column:10/12;
     }
     #nav_bar_ul {
-        display:none;
+        display:flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* display: block; */
+        flex-direction: column;
+        width: 100%;
+        min-height:100vh;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        background:#FFDE88;
+        z-index: 98;
+        transition: all 0.5s;
     }
+    #nav_bar_ul.active {
+        left:0;
+    }
+
+    .nav_element {
+        padding: 20px 0px 20px 0px;
+    }
+    .nav_element a {
+        color: #000000;
+    }
+    .nav_element a:hover{
+        color: #00A863;
+    }
+    .nav_element a::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 4px;
+        background: #00A863;
+        transition: width .3s;
+    }
+
+
+
     #second_container {
         bottom: 0px ;
         margin-bottom:0px ;
@@ -621,6 +686,7 @@ h2 {
     h2 {
         font-size: 32px;
     }
+
 }
 
 @media screen and (max-width: 500px) {
