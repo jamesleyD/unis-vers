@@ -1,0 +1,25 @@
+{
+  "name": "unisvers",
+  "version": "1.0.0",
+  "description": "Site pour l'association unis-vers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesleyD/unis-vers.git"
+  },
+  "keywords": [
+    "Unis-vers"
+  ],
+  "author": "Jamesley Doxaint",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesleyD/unis-vers/issues"
+  },
+  "homepage": "https://github.com/jamesleyD/unis-vers#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
