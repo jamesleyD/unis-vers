@@ -220,15 +220,22 @@
     justify-items: center;
 }
 
-#activities_container,#contact_container {
+
+#activities_container{
+    border-radius: 20px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#contact_container,#activities_container {
     display: flex;
     flex-direction: column;
     width:100%;
     grid-column: 3/11;
     background-color: #FFFFFF;
-    border-radius: 20px;
 }
 #contact_container {
+    border-radius: 10px;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.64); 
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.64);
 }
@@ -323,12 +330,14 @@
 }
 /*  =================================================================  */
 
-input {
+input,textarea {
     color: white;
+    outline:none;
+    border-radius: 5px;
+    background-color: white;
+    border-color: white;
 }
 
-#contact_container {
-}
 
 #contact_form {
     display: grid !important;
@@ -379,6 +388,7 @@ input {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+
 .btn_submit{
     grid-column: 2/4;
     font-family: Lato;
@@ -388,12 +398,36 @@ input {
     line-height: 31px;
     color: #FFFFFF;
 
+    border-radius:10px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
     height: 78px;
-    background: #FFB800;
-    
+    background-color: #FFB800;
+
+    outline:none;
+    border: 2px solid #5271FF;
 }
+
+
+
+color: #fff; /*For IE*/
+
+.btn_submit:active {
+    border-style: outset;
+  }
+
+  .btn_submit,
+  .btn_submit:after {
+    transition: 1s, font-size 0.1s;
+  }
+  
+  .btn_submit:hover,
+  .btn_submit:hover:after {
+    font-size: 2em;
+    color:#5271FF;
+    background-color: #75FFC6;
+  }
+
 
 h2 {
     margin-top:3%;
@@ -557,7 +591,7 @@ h2 {
     }
     #activities_container{
         grid-column: 2/12 ;
-        border-radius: 0%;
+        border-radius: 0px;
     }
     .below_title {
         width: 95% ;
@@ -599,12 +633,22 @@ h2 {
     #iframe_small {
         max-width:350px;
     }
+    #logo_top,#logo_bottom {
+        width: 166px;
+        height: 37px;
+    }
+    .menu-btn {
+        grid-column:8/12;
+    }
 
 }
 
 @media screen and (max-width: 500px) {
     #iframe_small {
         max-width:300px;
+    }
+    .fa-instagram {
+        font-size:3em;
     }
 
 }
