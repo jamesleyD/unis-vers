@@ -124,28 +124,28 @@
         <div id="form_cont">
 
           <form id="contact_form" action="">
-
+            <p id="error_message" > display none </p>
             <label>
-              <p class="form_text" >Nom</p>
-              <input class="input_nom" type="text">
+              <p class="form_text">Nom</p>
+              <input class="input_nom" id="name" type="text">
             </label>
             <label>
               <p class="form_text" >Email</p>
-              <input class="input_email" type="email">
+              <input class="input_email" id="email" type="email">
             </label>
             <label>
-              <p class="form_text" type="text">Sujet</p>
-              <input class="input_subject" type="text">
+              <p class="form_text">Sujet</p>
+              <input class="input_subject" id="subject" type="text">
             </label>
             <label>
-              <p class="form_text" >Votre message</p>
-              <textarea rows="5" class="input_message"></textarea>
+              <p class="form_text">Votre message</p>
+              <textarea rows="5" class="input_message" id="message"></textarea>
             </label>
-            <button class="btn_submit" type="submit">Envoyer</button>
+            <button class="btn_submit" id="submit" type="submit">Envoyer</button>
 
           </form>
-
         </div>
+        <script src="./Scripts/form _validation.js"></script>
 
       </div>  
 

@@ -375,6 +375,18 @@ input,textarea {
     height: 55px;
 }
 
+#error_message {
+    display: none;
+    grid-column: 2/8;
+    text-align: center;
+    font-family: Lato;
+    font-size: 26px;
+    line-height: 31px;
+    color: rgb(0, 0, 0);
+    padding: 0.6em;
+    background: #FFB800;
+}
+
 .form_text {
     margin-bottom:15px;
     font-family: Lato;
@@ -387,6 +399,7 @@ input,textarea {
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 
 
 .btn_submit{
@@ -409,9 +422,6 @@ input,textarea {
 }
 
 
-
-color: #fff; /*For IE*/
-
 .btn_submit:active {
     border-style: outset;
   }
@@ -427,6 +437,8 @@ color: #fff; /*For IE*/
     color:#5271FF;
     background-color: #75FFC6;
   }
+
+
 
 
 h2 {
