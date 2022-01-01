@@ -14,10 +14,12 @@ menuBtn.addEventListener('click', () => {
   if(!menuOpen) {
     menuBtn.classList.add('open');
     nav_bar_ul.classList.add('active');
+    menuBtn.style.position = 'fixed';
     menuOpen = true;
   } else {
     menuBtn.classList.remove('open');
     nav_bar_ul.classList.remove('active');
+    menuBtn.style.position = 'relative';
     menuOpen = false;
   }
   
@@ -27,6 +29,7 @@ menuBtn.addEventListener('click', () => {
 activities_a.addEventListener("click", (e) => {
   menuBtn.classList.remove('open');
   nav_bar_ul.classList.remove('active');
+  menuBtn.style.position = 'relative';
   menuOpen = false;
   e.preventDefault();
   activities.scrollIntoView({ behavior:'smooth', block:'start'});
@@ -35,6 +38,7 @@ activities_a.addEventListener("click", (e) => {
 contact_a.addEventListener("click", (e) => {
   menuBtn.classList.remove('open');
   nav_bar_ul.classList.remove('active');
+  menuBtn.style.position = 'relative';
   menuOpen = false;
   e.preventDefault();
   contact.scrollIntoView({ behavior:'smooth', block:'start'});
@@ -43,6 +47,7 @@ contact_a.addEventListener("click", (e) => {
 localisation_a.addEventListener("click", (e) => {
   menuBtn.classList.remove('open');
   nav_bar_ul.classList.remove('active');
+  menuBtn.style.position = 'relative';
   menuOpen = false;
   e.preventDefault();
   localisation.scrollIntoView({ behavior:'smooth', block:'start'})

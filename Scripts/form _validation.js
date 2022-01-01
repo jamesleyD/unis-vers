@@ -1,12 +1,9 @@
 document.getElementById("contact_form").addEventListener("submit", (e) => {
-  alert("Please")
   e.preventDefault();
   var error_message = document.getElementById("error_message");
   if (validate()) {
-    alert("tout est ok");
     error_message.style.display = "none";
   } else {
-    alert("non")
     error_message.style.display = "block";
   }
 });
