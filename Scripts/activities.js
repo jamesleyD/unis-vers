@@ -15,7 +15,7 @@ const activities_list = [
     id:2,
     titre: "Nutrition",
     descripton: "Volet nutrition bien être: on propose de la nourriture avec un budget bas. Venez découvrir des pâtisseries que nous sommes les seuls à proposer. 😋😋😋.",
-    image: "./Image/image7.jpeg",
+    image: "./Image/food-heart.jpg",
   },
   {
     id:3,
