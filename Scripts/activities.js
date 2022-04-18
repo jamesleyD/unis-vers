@@ -1,45 +1,27 @@
 const activities_list = [
   {
     id:0,
-    titre: "test",
-    descripton: "test",
-    image: "./Image/image7.jpeg",
+    titre: "Sport",
+    descripton: "Nous faisons des modules centré sur le sport, de la préparation physique à du du coaching individuel et plus ! ",
+    image: "./Image/image00005.jpeg",
   },
   {
     id:1,
-    titre: "test2",
-    descripton: "test2",
-    image: "./Image/image7.jpeg",
+    titre: "Santé",
+    descripton: "Nous nous occupons de toute personne voulant reprendre en main leur santé. On s'occupe de tous types de personnes (diabétique, obésité, anxieux…) et nous sommes formés pour travailler avec ceux victimes de COVID",
+    image: "./Image/image11.jpeg",
   },
   {
     id:2,
-    titre: "test3",
-    descripton: "test3",
+    titre: "Nutrition",
+    descripton: "Volet nutrition bien être: on propose de la nourriture avec un budget bas. Venez découvrir des pâtisseries que nous sommes les seuls à proposer. 😋😋😋.",
     image: "./Image/image7.jpeg",
   },
   {
     id:3,
-    titre: "test4",
-    descripton: "test4",
-    image: "./Image/image7.jpeg",
-  },
-  {
-    id:4,
-    titre: "test5",
-    descripton: "test5",
-    image: "./Image/image7.jpeg",
-  },
-  {
-    id:5,
-    titre: "test6",
-    descripton: "test6",
-    image: "./Image/image7.jpeg",
-  },
-  {
-    id:6,
-    titre: "test7",
-    descripton: "test7",
-    image: "./Image/image7.jpeg",
+    titre: "BPJEPS",
+    descripton: "Préparation de jeunes de 18-20 ans qui sortent d’un BPJEPS.",
+    image: "./Image/BPJEPS.jpg",
   },
 ]
 
@@ -72,6 +54,7 @@ activities_list.map(activity => {
 
     var div_img = document.createElement('div');
     div_img.classList.add("img_activité_div");
+    div_img.style.padding="0px 15px 0px 5px";
     DivChild.appendChild(div_img);
 
     var img = document.createElement('img');
@@ -108,6 +91,7 @@ activities_list.map(activity => {
 
     var div_img = document.createElement('div');
     div_img.classList.add("img_activité_div");
+    div_img.style.padding="0px 5px 0px 15px";
     DivChild.appendChild(div_img);
 
     var img = document.createElement('img');
